@@ -8,9 +8,6 @@ export default function Header() {
           Project Task Manager
         </Link>
       </div>
-      {/* <div className="bg-blue-500 p-2 text-white rounded">
-        <button>Create Quick Task</button>
-      </div> */}
     </div>
   );
 }
