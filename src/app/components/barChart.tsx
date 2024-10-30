@@ -13,7 +13,6 @@ const BarChartStatistic = () => {
     {
       name: "To Do",
       count: 2,
-      
     },
     {
       name: "In Progress",
@@ -25,13 +24,16 @@ const BarChartStatistic = () => {
     },
     {
       name: "Complete",
-      count: 3
-    }
-   
+      count: 3,
+    },
   ];
 
   return (
-    <ResponsiveContainer  width="70%" height="80%" className="ml-20 mt-7 bg-gray-50">
+    <ResponsiveContainer
+      width="70%"
+      height="80%"
+      className="ml-20 mt-7 bg-gray-50"
+    >
       <BarChart width={50} height={80} data={data}>
         <XAxis dataKey="name" />
         <YAxis />

@@ -7,6 +7,7 @@ export default function Page() {
   return (
     <div className="upper-div">
       <div className="py-8">
+        <span className="md:text-xl text-gray-600 font-bold">Projects</span>
         <OverViewCardPage />
       </div>
       <div className="graph-div flex mt-10">
