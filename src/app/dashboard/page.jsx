@@ -1,23 +1,11 @@
 "use client";
-import { useState } from "react";
 import OverViewCardPage from "../components/overviewcard";
 import BarChartStatistic from "../components/barChart";
 import ActivityFeed from "../components/activityfeed";
-import Modal from "../components/modal";
 
 export default function Page() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleModalOpen = () => {
-    setIsOpen(true);
-  };
   return (
     <div className="upper-div">
-      <div className="flex justify-end">
-        <div className="bg-blue-500 p-2 w-40 text-center text-white rounded">
-          <button onClick={handleModalOpen}>Create Quick Task</button>
-        </div>
-      </div>
       <div className="py-8">
         <OverViewCardPage />
       </div>
@@ -34,9 +22,6 @@ export default function Page() {
           <ActivityFeed />
         </div>
       </div>
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <div></div>
-      </Modal>
     </div>
   );
 }

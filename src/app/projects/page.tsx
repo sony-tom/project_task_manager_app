@@ -1,5 +1,6 @@
-
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import Modal from "../components/modal";
 
 const columns = [
   { id: "ready", title: "To Do" },
@@ -21,7 +22,7 @@ const tasks = [
     },
     timeEstimate: "4h",
     tags: ["design", "frontend"],
-    status: "ready", 
+    status: "ready",
   },
   {
     id: "task1",
@@ -35,15 +36,25 @@ const tasks = [
     },
     timeEstimate: "4h",
     tags: ["design", "frontend"],
-    status: "ready", 
+    status: "ready",
   },
-  
 ];
 
 export default function KanbanBoard() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div className="p-8 text-gray-500">
-      <div className="flex space-x-4 overflow-x-auto">
+      <div className="flex justify-end">
+        <div className="bg-blue-500 p-2 w-40 text-center text-white rounded">
+          <button onClick={handleModalOpen}>Create Quick Task</button>
+        </div>
+      </div>
+      <div className="flex space-x-4 overflow-x-auto mt-4">
         {columns.map((column) => {
           const filteredTasks = tasks.filter(
             (task) => task.status === column.id
@@ -86,7 +97,8 @@ export default function KanbanBoard() {
                       </p>
                     </div>
                     <p className="text-sm mt-2">
-                      <span className="font-medium">Time Estimate:</span>{""}
+                      <span className="font-medium">Time Estimate:</span>
+                      {""}
                       {task.timeEstimate}
                     </p>
                   </div>
@@ -96,6 +108,9 @@ export default function KanbanBoard() {
           );
         })}
       </div>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <div></div>
+      </Modal>
     </div>
   );
 }
