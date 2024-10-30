@@ -1,15 +1,27 @@
-
-
-export default function ActivityFeed() {
+const RecentActivities = () => {
   return (
-    <div className="">
-        <h1 className="text-lg font-bold text-black">Recent Activity Feed</h1>
-        <div className=" bg-black shadow-lg shadow-black  w-24 h-40 text-black flex flex-col">
-             <span className="text-white">Type</span>
-             <span className="text-white">User</span>
-             
+    <div className="flex w-full flex-col md:col-span-4 lg:col-span-4">
+      <h2 className={`mb-4 text-xl text-gray-600 md:text-2xl`}>Recent Activities</h2>
+      <div className="flex grow flex-col justify-between rounded-xl bg-gray-50 p-4">
+        <div className="bg-white px-6 flex justify-between items-center">
+          <div className="flex items-center">
+            <div className="min-w-0">
+              <p className="truncate text-sm font-semibold md:text-black">
+                Jacob George
+              </p>
+              <p className="hidden text-sm text-gray-500 sm:block">
+                mailjacob@gmail.com
+              </p>
+            </div>
+          </div>
+          <p className="text-gray-400">Rs. 23234</p>
         </div>
-        <span className="text-white">Time</span>
+        <div className="flex items-center pb-2 pt-6">
+          <h3 className="ml-2 text-sm text-gray-500 ">Updated just now!</h3>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default RecentActivities;
