@@ -4,8 +4,8 @@ import ReactModal from "react-modal";
 const Modal = ({
   isOpen,
   onClose,
-  width = "500px",
-  height = "300px",
+  width = "600px",
+  height = "570px",
   children,
 }) => {
   const parsedHeight = height ? parseInt(height, 10) : 0;
@@ -49,7 +49,7 @@ const Modal = ({
           onClick={onClose}
           aria-label="closeIcon"
         >
-          close
+          X
         </button>
         <div className="w-full h-full">{children}</div>
       </div>
