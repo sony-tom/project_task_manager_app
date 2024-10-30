@@ -1,7 +1,7 @@
 const RecentActivities = () => {
   return (
     <div className="flex w-full flex-col md:col-span-4 lg:col-span-4">
-      <h2 className={`mb-4 text-xl text-gray-600 md:text-2xl`}>Recent Activities</h2>
+      <h2 className={`mb-4 text-xl text-gray-600 md:text-xl font-bold`}>Recent Activities</h2>
       <div className="flex grow flex-col justify-between rounded-xl bg-gray-50 p-4">
         <div className="bg-white px-6 flex justify-between items-center">
           <div className="flex items-center">

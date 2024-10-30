@@ -31,7 +31,7 @@ const BarChartStatistic = () => {
   ];
 
   return (
-    <ResponsiveContainer  width="70%" height="80%" className="ml-20">
+    <ResponsiveContainer  width="70%" height="80%" className="ml-20 mt-7">
       <BarChart width={50} height={80} data={data}>
         <XAxis dataKey="name" />
         <YAxis />
