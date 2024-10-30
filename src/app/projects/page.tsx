@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Modal from "../components/modal";
+import TaskForm from "../components/newtask";
 
 const columns = [
   { id: "ready", title: "To Do" },
@@ -109,7 +110,9 @@ export default function KanbanBoard() {
         })}
       </div>
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <div></div>
+        <div >
+            <TaskForm onClose={() => setIsOpen(false)}/>
+        </div>
       </Modal>
     </div>
   );
