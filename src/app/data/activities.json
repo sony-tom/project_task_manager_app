@@ -1,0 +1,31 @@
+{
+  "activities": [
+    {
+      "id": "act1",
+      "type": "task_moved",
+      "taskId": "task1",
+      "from": "To Do",
+      "to": "In Progress",
+      "user": "Alice Johnson",
+      "timestamp": "2024-10-30T10:30:00Z"
+    },
+    {
+      "id": "act2",
+      "type": "task_moved",
+      "taskId": "task2",
+      "from": "In Progress",
+      "to": "In Review",
+      "user": "Alice Johnson",
+      "timestamp": "2024-10-30T10:30:00Z"
+    },
+    {
+      "id": "act3",
+      "type": "task_moved",
+      "taskId": "task3",
+      "from": "In Review",
+      "to": "Completed",
+      "user": "Alice Johnson",
+      "timestamp": "2024-10-30T10:30:00Z"
+    }
+  ]
+}
