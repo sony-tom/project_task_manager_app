@@ -1,3 +1,4 @@
+import ActivityFeed from "../components/activityfeed";
 import OverViewCardPage from "../components/overviewcard";
 
 export default function Page() {
@@ -11,7 +12,7 @@ export default function Page() {
           <h2>Graph</h2>
         </div>
         <div className="w-2/5">
-          <h2>Recents table</h2>
+          <ActivityFeed/>
         </div>
       </div>
     </div>
