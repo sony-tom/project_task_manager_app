@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": "proj1",
+      "name": "Website Redesign",
+      "description": "Modernize company website",
+      "progress": 65,
+      "columns": [
+        {
+          "id": "todo",
+          "title": "To Do",
+          "tasks": [
+            {
+              "id": "task1",
+              "title": "Update homepage hero section",
+              "priority": "high",
+              "dueDate": "2024-11-15",
+              "assignee": {
+                "id": "user1",
+                "name": "Alice Johnson",
+                "avatar": "/avatars/alice.jpg"
+              },
+              "timeEstimate": "4h",
+              "tags": ["design", "frontend"]
+            }
+          ]
+        },
+        {
+          "id": "inprogress",
+          "title": "In Progress",
+          "tasks": [
+            {
+              "id": "task2",
+              "title": "Implement responsive navigation",
+              "priority": "medium",
+              "dueDate": "2024-11-10",
+              "assignee": {
+                "id": "user2",
+                "name": "Bob Smith",
+                "avatar": "/avatars/bob.jpg"
+              },
+              "timeEstimate": "6h",
+              "tags": ["frontend", "mobile"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "team": [
+    {
+      "id": "user1",
+      "name": "Alice Johnson",
+      "role": "Designer",
+      "avatar": "/avatars/alice.jpg"
+    },
+    {
+      "id": "user2",
+      "name": "Bob Smith",
+      "role": "Developer",
+      "avatar": "/avatars/bob.jpg"
+    }
+  ]
+}
