@@ -11,51 +11,33 @@ import {
 const BarChartStatistic = () => {
   const data = [
     {
-      name: "Jan",
-      high: 4000,
-      low: 2400,
+      name: "To Do",
+      count: 2,
+      
     },
     {
-      name: "Feb",
-      high: 5000,
-      low: 1500,
+      name: "In Progress",
+      count: 1,
     },
     {
-      name: "Mar",
-      high: 6000,
-      low: 3000,
+      name: "Review",
+      count: 2,
     },
     {
-      name: "Apr",
-      high: 6500,
-      low: 4500,
-    },
-    {
-      name: "May",
-      high: 7000,
-      low: 2200,
-    },
-    {
-      name: "Jun",
-      high: 8000,
-      low: 3500,
-    },
-    {
-      name: "Jul",
-      high: 7400,
-      low: 5500,
-    },
+      name: "Complete",
+      count: 3
+    }
+   
   ];
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <BarChart width={730} height={250} data={data}>
+    <ResponsiveContainer  width="70%" height="80%" className="ml-20">
+      <BarChart width={50} height={80} data={data}>
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="high" fill="#b7b3ff" />
-        {/* <Bar dataKey="low" fill="#FA8072" /> */}
+        <Bar dataKey="count" fill="#99C3FF" barSize={50} />
       </BarChart>
     </ResponsiveContainer>
   );

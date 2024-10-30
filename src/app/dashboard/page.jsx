@@ -11,7 +11,7 @@ export default function Page() {
       </div>
       <div className="graph-div flex mt-10">
         <div className="w-3/5">
-          <div className="w-11/12 h-[400px] rounded">
+          <div className="w-11/12 h-[400px] rounded text-gray-600 md:text-2xl">   Task Completion Statistics
             <BarChartStatistic />
           </div>
         </div>
